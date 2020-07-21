@@ -8,7 +8,7 @@ resource "aws_instance" "apache_webserver" {
   subnet_id               = var.private_subnet_id
   iam_instance_profile    = aws_iam_instance_profile.webserver_instance_profile.name
   monitoring              = "true"
-  disable_api_termination = "true"
+  disable_api_termination = "false" #as this is just a test, we'll set it as false
   user_data               = data.template_file.apache_user_data.rendered
   vpc_security_group_ids = [aws_security_group.webserver_sg.id]
 
