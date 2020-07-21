@@ -16,6 +16,7 @@ This repository helps you to deploy the following resources:
 -----------------------------------------------------------------------------------
 
 Expected Inputs:
+
     - region
 
     - access_key
@@ -29,7 +30,7 @@ Expected Inputs:
     - private subnet id
 
     - nginx_details (optional, as is set by default)
-    
+
     - apache_details (optional, as is set by default)
 
 (you can just modify the vars.auto.tfvars)
